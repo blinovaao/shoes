@@ -55,6 +55,7 @@ img {
     
     display: flex;
     justify-content: start;
+    align-items: center;
 
     position: relative;
 }
@@ -68,6 +69,14 @@ img {
 
     display: block;
     padding: 0;
+}
+
+.header__title {
+    margin: 0;
+    font-size: 24px;
+
+    width: 100%;
+    text-align: center;
 }
 
 .header__list {

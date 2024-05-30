@@ -70,8 +70,13 @@ document.addEventListener('keydown', function(e) {
 /* HEADER MENU */
 
 const headerButton = document.querySelector('.header__button');
+const headerTitle = document.querySelector('.header__title');
 const header = document.querySelector('.header');
 
 headerButton.addEventListener('click', () => {
+    header.classList.toggle('opened');
+})
+
+headerTitle.addEventListener('click', () => {
     header.classList.toggle('opened');
 })
