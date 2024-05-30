@@ -71,12 +71,29 @@ img {
     padding: 0;
 }
 
+.header__button--cross {
+    display: none;
+}
+
+.header.opened .header__button--default {
+    display: none;
+}
+
+.header.opened .header__button--cross {
+    display: inline;
+}
+
 .header__title {
     margin: 0;
     font-size: 24px;
 
     width: 100%;
     text-align: center;
+    text-transform: uppercase;
+}
+
+.header.opened .header__title {
+    color: transparent;
 }
 
 .header__list {
