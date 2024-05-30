@@ -65,3 +65,13 @@ document.addEventListener('keydown', function(e) {
         })
     }
 })
+
+
+/* HEADER MENU */
+
+const headerButton = document.querySelector('.header__button');
+const header = document.querySelector('.header');
+
+headerButton.addEventListener('click', () => {
+    header.classList.toggle('opened');
+})
