@@ -98,6 +98,8 @@ img {
 
     display: flex;
     align-items: center;
+
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .catalog__item.opened:hover {
@@ -124,7 +126,8 @@ img {
 
 .item__content {
     display: none;
-    z-index: 5;    
+    z-index: 5;
+    overflow-x: hidden;
 
     position: fixed;
     top: 5vh;
@@ -142,14 +145,14 @@ img {
 
     box-shadow: 0 0 50px 5000px rgba(0, 0, 0, 0.477);
 
-    transition: display ease-in cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: 0.3s display cubic-bezier(0.075, 0.82, 0.165, 1);
     overflow-y: auto;
 }
 
 @media (min-width: 768px) {
     .item__content {
-        grid-template-columns: 350px 1fr;
-        grid-gap: 50px;
+        grid-template-columns: auto 1fr;
+        grid-gap: 60px;
 
         max-width: 750px;
     }
@@ -157,8 +160,7 @@ img {
 
 @media (min-width: 1024px) {
     .item__content {
-        grid-template-columns: 450px 1fr;
-
+        grid-template-columns: 1fr auto;
         max-width: 1000px;
     }
 }
@@ -188,6 +190,13 @@ img {
 
     display: flex;
     justify-content: center;
+    align-items: start;
+}
+
+@media (min-width: 768px) {
+    .item__images {
+        margin: 0 auto;
+    }
 }
 
 .images-slider {
@@ -199,8 +208,14 @@ img {
 
 @media (min-width: 768px) {
     .images-slider {
-        width: 300px;
-        height: 300px;
+        max-width: 300px;
+        height: auto;
+    }
+}
+
+@media (min-width: 1024px) {
+    .images-slider {
+        max-width: unset;
     }
 }
 
@@ -246,21 +261,9 @@ img {
     left: -42px;
 }
 
-@media (min-width: 768px) {
-    .images-slider__button--prev {
-        left: calc(50% - 200px);
-    }
-}
-
 .images-slider__button--next {
     transform: translateY(-50%) rotate(90deg);
     right: -42px;
-}
-
-@media (min-width: 768px) {
-    .images-slider__button--next {
-        right: calc(50% - 200px);
-    }
 }
 
 .item__image {
@@ -312,15 +315,9 @@ img {
     text-align: left;
 }
 
-@media (min-width: 768px) {
-    .item__text {
-        padding: 30px 0 0;
-    }
-}
-
 @media (min-width: 1024px) {
     .item__text {
-        padding: 50px 0 0;
+        max-width: 380px;
     }
 }
 
