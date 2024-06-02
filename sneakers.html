@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style/style.css" rel="stylesheet">
+    <title>Кроссовки</title>
+</head>
+<body>
+    <header class="header container">
+        <div class="header__wrapper">
+            <button class="header__button" type="button">
+                <span class="visually-hidden">Открыть меню.</span>
+                <svg class="header__button--default" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 17h14M5 12h14M5 7h14"/></svg>
+                <svg class="header__button--cross" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><g fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"><path d="M5.47 5.47a.75.75 0 0 1 1.06 0l12 12a.75.75 0 1 1-1.06 1.06l-12-12a.75.75 0 0 1 0-1.06"/><path d="M18.53 5.47a.75.75 0 0 1 0 1.06l-12 12a.75.75 0 0 1-1.06-1.06l12-12a.75.75 0 0 1 1.06 0"/></g></svg>
+            </button>
+            <h1 class="header__title">Мужская обувь</h1>
+            <ul class="header__list">
+                <li class="header__item"><a class="header__link" href="woman.html">Женская обувь</a></li>
+                <li class="header__item"><a class="header__link" href="man.html">Мужская обувь</a></li>
+                <li class="header__item"><a class="header__link header__link--current" href="sneakers.html" aria-current="true">Кроссовки</a></li>
+                <li class="header__item"><a class="header__link" href="aquashoes.html">Аквашузы</a></li>
+                <li class="header__item"><a class="header__link" href="warm.html">Утеплённая обувь</a></li>
+                <li class="header__item"><a class="header__link" href="eva.html">ЭВА</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="main container">
+        <section class="catalog">
+            <h2 class="visually-hidden">Женская обувь</h2>
+
+            <ul class="catalog__list">
+                <li class="catalog__item item" tabindex="0">
+                    <span class="visually-hidden">Открыть товар.</span>
+
+                    <img class="catalog__preimage" src="" alt="">
+
+                    <div class="item__content">
+                        <div class="item__images">
+                            <div class="images-slider">
+                                <div class="images-slider__wrapper">
+                                    <ul class="images-slider__list">
+                                        <li class="images-slider__item images-slider__item--active">
+                                            <img class="images-slider__image" src="" alt="">
+                                        </li>
+                                    </ul>
+                                    
+                                    <button class="images-slider__button images-slider__button--prev prev-button" type="button">
+                                        <span class="visually-hidden">Предыдущая фотография.</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 1024 1024"><path fill="currentColor" d="m488.832 344.32l-339.84 356.672a32 32 0 0 0 0 44.16l.384.384a29.44 29.44 0 0 0 42.688 0l320-335.872l319.872 335.872a29.44 29.44 0 0 0 42.688 0l.384-.384a32 32 0 0 0 0-44.16L535.168 344.32a32 32 0 0 0-46.336 0"/></svg>
+                                    </button>
+                                    <button class="images-slider__button images-slider__button--next next-button" type="button">
+                                        <span class="visually-hidden">Следующая фотография.</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 1024 1024"><path fill="currentColor" d="m488.832 344.32l-339.84 356.672a32 32 0 0 0 0 44.16l.384.384a29.44 29.44 0 0 0 42.688 0l320-335.872l319.872 335.872a29.44 29.44 0 0 0 42.688 0l.384-.384a32 32 0 0 0 0-44.16L535.168 344.32a32 32 0 0 0-46.336 0"/></svg>
+                                    </button>
+                                </div>
+
+                                <ul class="mini">
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="" alt=""></button></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="item__text text">
+                            <dl class="text__list text__list--basic">
+                                <div class="text__item">
+                                    <dt class="text__title">Артикул:</dt>
+                                    <dd class="text__description"></dd>
+                                </div>
+                                
+                                <div class="text__item">
+                                    <dt class="text__title">В коробке:</dt>
+                                    <dd class="text__description"></dd>
+                                </div>
+                                
+                                <div class="text__item">
+                                    <dt class="text__title">Цвет:</dt>
+                                    <dd class="text__description">в ассортименте</dd>
+                                </div>
+                                
+                                <div class="text__item">
+                                    <dt class="text__title">Размерный ряд/ростовка:</dt>
+                                    <dd class="text__description">37-41 / 1:2:1:1:1</dd>
+                                </div>
+                            </dl>
+
+                            <dl class="text__list text__list--details">
+                                <div class="text__item">
+                                    <dt class="text__title">Обувь домашняя</dt>
+                                    <dd class="text__description"></dd>
+                                </div>
+                                
+                                <div class="text__item">
+                                    <dt class="text__title">Верх:</dt>
+                                    <dd class="text__description">текстиль</dd>
+                                </div>
+
+                                <div class="text__item">
+                                    <dt class="text__title">Подошва:</dt>
+                                    <dd class="text__description">ПУ</dd>
+                                </div>
+
+                                <div class="text__item">
+                                    <dt class="text__title">Стелька:</dt>
+                                    <dd class="text__description">текстиль</dd>
+                                </div>
+
+                                <div class="text__item">
+                                    <dt class="text__title">Производство:</dt>
+                                    <dd class="text__description">Россия</dd>
+                                </div>
+
+                                <div class="text__item">
+                                    <dt class="text__title">Максимальный выпуск&nbsp;в месяц (произв.мощность), пар:</dt>
+                                    <dd class="text__description">24 000</dd>
+                                </div>
+                            </dl>
+                        </div>
+
+                        <button class="item__close-button" type="button">
+                            <span class="visually-hidden">Закрыть.</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><g fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"><path d="M5.47 5.47a.75.75 0 0 1 1.06 0l12 12a.75.75 0 1 1-1.06 1.06l-12-12a.75.75 0 0 1 0-1.06"/><path d="M18.53 5.47a.75.75 0 0 1 0 1.06l-12 12a.75.75 0 0 1-1.06-1.06l12-12a.75.75 0 0 1 1.06 0"/></g></svg>
+                        </button>
+                    </div>
+                </li>
+                <li class="catalog__item item" tabindex="0">
+                    <span class="visually-hidden">Открыть товар.</span>
+
+                    <img class="catalog__preimage" src="" alt="">
+
+                    <div class="item__content">
+                        <div class="item__images">
+                            <div class="images-slider">
+                                <div class="images-slider__wrapper">
+                                    <ul class="images-slider__list">
+                                        <li class="images-slider__item images-slider__item--active">
+                                            <img class="images-slider__image" src="" alt="">
+                                        </li>
+                                    </ul>
+                                    
+                                    <button class="images-slider__button images-slider__button--prev prev-button" type="button">
+                                        <span class="visually-hidden">Предыдущая фотография.</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 1024 1024"><path fill="currentColor" d="m488.832 344.32l-339.84 356.672a32 32 0 0 0 0 44.16l.384.384a29.44 29.44 0 0 0 42.688 0l320-335.872l319.872 335.872a29.44 29.44 0 0 0 42.688 0l.384-.384a32 32 0 0 0 0-44.16L535.168 344.32a32 32 0 0 0-46.336 0"/></svg>
+                                    </button>
+                                    <button class="images-slider__button images-slider__button--next next-button" type="button">
+                                        <span class="visually-hidden">Следующая фотография.</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 1024 1024"><path fill="currentColor" d="m488.832 344.32l-339.84 356.672a32 32 0 0 0 0 44.16l.384.384a29.44 29.44 0 0 0 42.688 0l320-335.872l319.872 335.872a29.44 29.44 0 0 0 42.688 0l.384-.384a32 32 0 0 0 0-44.16L535.168 344.32a32 32 0 0 0-46.336 0"/></svg>
+                                    </button>
+                                </div>
+
+                                <ul class="mini">
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="" alt=""></button></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="item__text text">
+                            <dl class="text__list text__list--basic">
+                                <div class="text__item">
+                                    <dt class="text__title">Артикул:</dt>
+                                    <dd class="text__description"></dd>
+                                </div>
+                                
+                                <div class="text__item">
+                                    <dt class="text__title">В коробке:</dt>
+                                    <dd class="text__description"></dd>
+                                </div>
+                                
+                                <div class="text__item">
+                                    <dt class="text__title">Цвет:</dt>
+                                    <dd class="text__description">в ассортименте</dd>
+                                </div>
+                                
+                                <div class="text__item">
+                                    <dt class="text__title">Размерный ряд/ростовка:</dt>
+                                    <dd class="text__description">37-41 / 1:2:1:1:1</dd>
+                                </div>
+                            </dl>
+
+                            <dl class="text__list text__list--details">
+                                <div class="text__item">
+                                    <dt class="text__title">Обувь домашняя</dt>
+                                    <dd class="text__description"></dd>
+                                </div>
+                                
+                                <div class="text__item">
+                                    <dt class="text__title">Верх:</dt>
+                                    <dd class="text__description">текстиль</dd>
+                                </div>
+
+                                <div class="text__item">
+                                    <dt class="text__title">Подошва:</dt>
+                                    <dd class="text__description">ПУ</dd>
+                                </div>
+
+                                <div class="text__item">
+                                    <dt class="text__title">Стелька:</dt>
+                                    <dd class="text__description">текстиль</dd>
+                                </div>
+
+                                <div class="text__item">
+                                    <dt class="text__title">Производство:</dt>
+                                    <dd class="text__description">Россия</dd>
+                                </div>
+
+                                <div class="text__item">
+                                    <dt class="text__title">Максимальный выпуск&nbsp;в месяц (произв.мощность), пар:</dt>
+                                    <dd class="text__description">24 000</dd>
+                                </div>
+                            </dl>
+                        </div>
+
+                        <button class="item__close-button" type="button">
+                            <span class="visually-hidden">Закрыть.</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><g fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"><path d="M5.47 5.47a.75.75 0 0 1 1.06 0l12 12a.75.75 0 1 1-1.06 1.06l-12-12a.75.75 0 0 1 0-1.06"/><path d="M18.53 5.47a.75.75 0 0 1 0 1.06l-12 12a.75.75 0 0 1-1.06-1.06l12-12a.75.75 0 0 1 1.06 0"/></g></svg>
+                        </button>
+                    </div>
+                </li>
+            </ul>
+
+            <button class="up-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 20V4m0 0l6 6m-6-6l-6 6"/></svg>
+                <span class="visually-hidden"></span>
+            </button>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

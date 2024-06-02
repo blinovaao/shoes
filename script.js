@@ -80,3 +80,25 @@ headerButton.addEventListener('click', () => {
 headerTitle.addEventListener('click', () => {
     header.classList.toggle('opened');
 })
+
+/* UP-BUTTON */
+
+const upButton = document.querySelector('.up-button');
+
+window.addEventListener('scroll', () => {
+    const scrollY = window.scrollY || document.documentElement.scrollTop;
+
+    if (scrollY > 300) {
+        upButton.classList.add('active')
+    } else {
+        upButton.classList.remove('active')
+    }
+})
+
+upButton.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+    })
+})
