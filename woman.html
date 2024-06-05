@@ -3,25 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style/style.css" rel="stylesheet">
+    <link href="css/catalog.css" rel="stylesheet">
     <title>Женская обувь</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-    <header class="header container">
-        <div class="header__wrapper">
-            <button class="header__button" type="button">
+    <header class="catalog-header container">
+        <div class="catalog-header__wrapper">
+            <button class="catalog-header__button" type="button">
                 <span class="visually-hidden">Открыть меню.</span>
-                <svg class="header__button--default" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 17h14M5 12h14M5 7h14"/></svg>
-                <svg class="header__button--cross" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><g fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"><path d="M5.47 5.47a.75.75 0 0 1 1.06 0l12 12a.75.75 0 1 1-1.06 1.06l-12-12a.75.75 0 0 1 0-1.06"/><path d="M18.53 5.47a.75.75 0 0 1 0 1.06l-12 12a.75.75 0 0 1-1.06-1.06l12-12a.75.75 0 0 1 1.06 0"/></g></svg>
+                <svg class="catalog-header__button--default" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 17h14M5 12h14M5 7h14"/></svg>
+                <svg class="catalog-header__button--cross" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><g fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"><path d="M5.47 5.47a.75.75 0 0 1 1.06 0l12 12a.75.75 0 1 1-1.06 1.06l-12-12a.75.75 0 0 1 0-1.06"/><path d="M18.53 5.47a.75.75 0 0 1 0 1.06l-12 12a.75.75 0 0 1-1.06-1.06l12-12a.75.75 0 0 1 1.06 0"/></g></svg>
             </button>
-            <h1 class="header__title">Женская обувь</h1>
-            <ul class="header__list">
-                <li class="header__item"><a class="header__link header__link--current" href="index.html" aria-current="true">Женская обувь</a></li>
-                <li class="header__item"><a class="header__link" href="man.html">Мужская обувь</a></li>
-                <li class="header__item"><a class="header__link" href="sneakers.html">Кроссовки</a></li>
-                <li class="header__item"><a class="header__link" href="aquashoes.html">Аквашузы</a></li>
-                <li class="header__item"><a class="header__link" href="warm.html">Утеплённая обувь</a></li>
-                <li class="header__item"><a class="header__link" href="eva.html">ЭВА</a></li>
+            <h1 class="visually-hidden">Женская обувь.</h1>
+
+            <a class="catalog-header__logo logo" href="https://gino-vita.ru/">
+                <span class="visually-hidden">Главная страница.</span>
+                <img class="logo__image" src="img/catalog/logo_black.png" alt="Логотип Gino Vita." width="40" height="40">
+            </a>
+
+            <ul class="catalog-header__list">
+                <li class="catalog-header__item"><a class="catalog-header__link catalog-header__link--current" href="woman.html">Женская обувь</a></li>
+                <li class="catalog-header__item"><a class="catalog-header__link" href="man.html">Мужская обувь</a></li>
+                <li class="catalog-header__item">
+                    <a class="catalog-header__link" href="sneakers-woman.html">Кроссовки</a>
+
+                    <div class="popover popover--catalog">
+                        <div class="popover__wrapper">
+                            <ul class="catalog-header__sublist">
+                                <li class="catalog-header__subitem"><a class="catalog-header__sublink catalog-header__link" href="sneakers-woman.html">Женские кроссовки</a></li>
+                                <li class="catalog-header__subitem"><a class="catalog-header__sublink catalog-header__link" href="sneakers-man.html">Мужские кроссовки</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="catalog-header__item">
+                    <a class="catalog-header__link" href="aquashoes-woman.html">Аквашузы</a>
+                
+                    <div class="popover popover--catalog">
+                        <div class="popover__wrapper">
+                            <ul class="catalog-header__sublist">
+                                <li class="catalog-header__subitem"><a class="catalog-header__sublink catalog-header__link" href="aquashoes-woman.html">Женские аквашузы</a></li>
+                                <li class="catalog-header__subitem"><a class="catalog-header__sublink catalog-header__link" href="aquashoes-man.html">Мужские аквашузы</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="catalog-header__item"><a class="catalog-header__link" href="warm.html">Утеплённая обувь</a></li>
+                <li class="catalog-header__item"><a class="catalog-header__link" href="eva.html">ЭВА</a></li>
             </ul>
         </div>
     </header>
@@ -34,7 +63,7 @@
                 <li class="catalog__item item" tabindex="0">
                     <span class="visually-hidden">Открыть товар.</span>
 
-                    <img class="catalog__preimage" src="img/woman/GTW00302/01/gtw00302_01_01.jpg" alt="">
+                    <img class="catalog__preimage" src="img/catalog/woman/GTW00302/01/gtw00302_01_01.jpg" alt="">
 
                     <div class="item__content">
                         <div class="item__images">
@@ -42,43 +71,43 @@
                                 <div class="images-slider__wrapper">
                                     <ul class="images-slider__list">
                                         <li class="images-slider__item images-slider__item--active">
-                                            <img class="images-slider__image" src="img/woman/GTW00302/01/gtw00302_01_01.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00302/01/gtw00302_01_01.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00302/01/photo_1_2024-05-24_23-36-26.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00302/01/photo_1_2024-05-24_23-36-26.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00302/01/photo_2_2024-05-24_23-36-26.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00302/01/photo_2_2024-05-24_23-36-26.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00302/01/photo_3_2024-05-24_23-36-26.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00302/01/photo_3_2024-05-24_23-36-26.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00302/01/photo_38_2024-05-24_19-09-48.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00302/01/photo_38_2024-05-24_19-09-48.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00302/01/photo_52_2024-05-24_19-09-48.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00302/01/photo_52_2024-05-24_19-09-48.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00302/01/photo_56_2024-05-10_15-48-34.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00302/01/photo_56_2024-05-10_15-48-34.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00302/01/photo_86_2024-05-10_15-48-34.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00302/01/photo_86_2024-05-10_15-48-34.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00302/02/gtw00302_02_01.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00302/02/gtw00302_02_01.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00302/02/photo_19_2024-05-24_19-09-48.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00302/02/photo_19_2024-05-24_19-09-48.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00302/02/photo_40_2024-05-24_19-09-48.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00302/02/photo_40_2024-05-24_19-09-48.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00302/02/photo_43_2024-05-24_19-09-48.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00302/02/photo_43_2024-05-24_19-09-48.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00302/02/photo_54_2024-05-10_15-48-34.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00302/02/photo_54_2024-05-10_15-48-34.jpg" alt="">
                                         </li>
                                     </ul>
                                     
@@ -93,19 +122,19 @@
                                 </div>
 
                                 <ul class="mini">
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00302/01/squares/gtw00302_01_01.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00302/01/squares/photo_1_2024-05-24_23-36-26.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00302/01/squares/photo_2_2024-05-24_23-36-26.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00302/01/squares/photo_3_2024-05-24_23-36-26.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00302/01/squares/photo_38_2024-05-24_19-09-48.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00302/01/squares/photo_52_2024-05-24_19-09-48.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00302/01/squares/photo_56_2024-05-10_15-48-34.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00302/01/squares/photo_86_2024-05-10_15-48-34.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00302/02/squares/gtw00302_02_01.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00302/02/squares/photo_19_2024-05-24_19-09-48.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00302/02/squares/photo_40_2024-05-24_19-09-48.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00302/02/squares/photo_43_2024-05-24_19-09-48.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00302/02/squares/photo_54_2024-05-10_15-48-34.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00302/01/squares/gtw00302_01_01.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00302/01/squares/photo_1_2024-05-24_23-36-26.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00302/01/squares/photo_2_2024-05-24_23-36-26.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00302/01/squares/photo_3_2024-05-24_23-36-26.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00302/01/squares/photo_38_2024-05-24_19-09-48.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00302/01/squares/photo_52_2024-05-24_19-09-48.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00302/01/squares/photo_56_2024-05-10_15-48-34.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00302/01/squares/photo_86_2024-05-10_15-48-34.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00302/02/squares/gtw00302_02_01.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00302/02/squares/photo_19_2024-05-24_19-09-48.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00302/02/squares/photo_40_2024-05-24_19-09-48.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00302/02/squares/photo_43_2024-05-24_19-09-48.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00302/02/squares/photo_54_2024-05-10_15-48-34.jpg" alt=""></button></li>
                                 </ul>
                             </div>
                         </div>
@@ -175,7 +204,7 @@
                 <li class="catalog__item item" tabindex="0">
                     <span class="visually-hidden">Открыть товар.</span>
 
-                    <img class="catalog__preimage" src="img/woman/GTW00303/gtw00303_01.jpg" alt="">
+                    <img class="catalog__preimage" src="img/catalog/woman/GTW00303/gtw00303_01.jpg" alt="">
 
                     <div class="item__content">
                         <div class="item__images">
@@ -183,82 +212,82 @@
                                 <div class="images-slider__wrapper">
                                     <ul class="images-slider__list">
                                         <li class="images-slider__item images-slider__item--active">
-                                            <img class="images-slider__image" src="img/woman/GTW00303/gtw00303_01.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00303/gtw00303_01.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00303/photo_4_2024-05-24_19-09-48.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00303/photo_4_2024-05-24_19-09-48.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00303/photo_5_2024-05-24_19-09-48.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00303/photo_5_2024-05-24_19-09-48.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00303/photo_6_2024-05-24_19-09-48.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00303/photo_6_2024-05-24_19-09-48.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00303/photo_8_2024-05-24_19-09-48.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00303/photo_8_2024-05-24_19-09-48.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00303/photo_18_2024-05-24_19-09-48.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00303/photo_18_2024-05-24_19-09-48.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00303/photo_20_2024-05-10_15-49-43.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00303/photo_20_2024-05-10_15-49-43.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00303/photo_23_2024-05-24_19-09-48.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00303/photo_23_2024-05-24_19-09-48.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00303/photo_24_2024-05-24_19-09-48.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00303/photo_24_2024-05-24_19-09-48.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00303/photo_29_2024-05-24_19-09-48.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00303/photo_29_2024-05-24_19-09-48.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00303/photo_30_2024-05-10_15-49-43.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00303/photo_30_2024-05-10_15-49-43.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00303/photo_34_2024-05-24_19-09-48.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00303/photo_34_2024-05-24_19-09-48.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00303/photo_50_2024-05-24_19-09-48.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00303/photo_50_2024-05-24_19-09-48.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00303/photo_56_2024-05-10_15-49-43.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00303/photo_56_2024-05-10_15-49-43.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00303/photo_62_2024-05-10_15-48-34.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00303/photo_62_2024-05-10_15-48-34.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00303/photo_65_2024-05-10_15-48-34.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00303/photo_65_2024-05-10_15-48-34.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00303/photo_65_2024-05-24_19-10-45.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00303/photo_65_2024-05-24_19-10-45.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00303/photo_67_2024-05-10_15-48-34.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00303/photo_67_2024-05-10_15-48-34.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00303/photo_78_2024-05-10_15-48-34.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00303/photo_78_2024-05-10_15-48-34.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00303/photo_79_2024-05-10_15-48-34.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00303/photo_79_2024-05-10_15-48-34.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00303/photo_80_2024-05-10_15-48-34.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00303/photo_80_2024-05-10_15-48-34.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00303/photo_89_2024-05-10_15-48-34.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00303/photo_89_2024-05-10_15-48-34.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00303/photo_90_2024-05-10_15-48-34.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00303/photo_90_2024-05-10_15-48-34.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00303/photo_95_2024-05-10_15-48-34.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00303/photo_95_2024-05-10_15-48-34.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00303/photo_97_2024-05-24_19-09-48.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00303/photo_97_2024-05-24_19-09-48.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00303/photo_99_2024-05-10_15-48-34.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00303/photo_99_2024-05-10_15-48-34.jpg" alt="">
                                         </li>
                                     </ul>
                                     
@@ -273,32 +302,32 @@
                                 </div>
 
                                 <ul class="mini">
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00303/squares/gtw00303_01.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00303/squares/photo_4_2024-05-24_19-09-48.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00303/squares/photo_5_2024-05-24_19-09-48.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00303/squares/photo_6_2024-05-24_19-09-48.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00303/squares/photo_8_2024-05-24_19-09-48.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00303/squares/photo_18_2024-05-24_19-09-48.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00303/squares/photo_20_2024-05-10_15-49-43.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00303/squares/photo_23_2024-05-24_19-09-48.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00303/squares/photo_24_2024-05-24_19-09-48.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00303/squares/photo_29_2024-05-24_19-09-48.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00303/squares/photo_30_2024-05-10_15-49-43.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00303/squares/photo_34_2024-05-24_19-09-48.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00303/squares/photo_50_2024-05-24_19-09-48.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00303/squares/photo_56_2024-05-10_15-49-43.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00303/squares/photo_62_2024-05-10_15-48-34.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00303/squares/photo_65_2024-05-10_15-48-34.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00303/squares/photo_65_2024-05-24_19-10-45.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00303/squares/photo_67_2024-05-10_15-48-34.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00303/squares/photo_78_2024-05-10_15-48-34.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00303/squares/photo_79_2024-05-10_15-48-34.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00303/squares/photo_80_2024-05-10_15-48-34.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00303/squares/photo_89_2024-05-10_15-48-34.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00303/squares/photo_90_2024-05-10_15-48-34.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00303/squares/photo_95_2024-05-10_15-48-34.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00303/squares/photo_97_2024-05-24_19-09-48.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00303/squares/photo_99_2024-05-10_15-48-34.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00303/squares/gtw00303_01.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00303/squares/photo_4_2024-05-24_19-09-48.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00303/squares/photo_5_2024-05-24_19-09-48.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00303/squares/photo_6_2024-05-24_19-09-48.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00303/squares/photo_8_2024-05-24_19-09-48.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00303/squares/photo_18_2024-05-24_19-09-48.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00303/squares/photo_20_2024-05-10_15-49-43.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00303/squares/photo_23_2024-05-24_19-09-48.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00303/squares/photo_24_2024-05-24_19-09-48.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00303/squares/photo_29_2024-05-24_19-09-48.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00303/squares/photo_30_2024-05-10_15-49-43.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00303/squares/photo_34_2024-05-24_19-09-48.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00303/squares/photo_50_2024-05-24_19-09-48.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00303/squares/photo_56_2024-05-10_15-49-43.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00303/squares/photo_62_2024-05-10_15-48-34.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00303/squares/photo_65_2024-05-10_15-48-34.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00303/squares/photo_65_2024-05-24_19-10-45.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00303/squares/photo_67_2024-05-10_15-48-34.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00303/squares/photo_78_2024-05-10_15-48-34.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00303/squares/photo_79_2024-05-10_15-48-34.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00303/squares/photo_80_2024-05-10_15-48-34.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00303/squares/photo_89_2024-05-10_15-48-34.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00303/squares/photo_90_2024-05-10_15-48-34.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00303/squares/photo_95_2024-05-10_15-48-34.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00303/squares/photo_97_2024-05-24_19-09-48.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00303/squares/photo_99_2024-05-10_15-48-34.jpg" alt=""></button></li>
                                 </ul>
                             </div>
                         </div>
@@ -368,7 +397,7 @@
                 <li class="catalog__item item" tabindex="0">
                     <span class="visually-hidden">Открыть товар.</span>
 
-                    <img class="catalog__preimage" src="img/woman/GTW00304/gtw00304_01.jpg" alt="">
+                    <img class="catalog__preimage" src="img/catalog/woman/GTW00304/gtw00304_01.jpg" alt="">
 
                     <div class="item__content">
                         <div class="item__images">
@@ -376,73 +405,73 @@
                                 <div class="images-slider__wrapper">
                                     <ul class="images-slider__list">
                                         <li class="images-slider__item images-slider__item--active">
-                                            <img class="images-slider__image" src="img/woman/GTW00304/gtw00304_01.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00304/gtw00304_01.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00304/photo_16_2024-05-10_15-49-43.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00304/photo_16_2024-05-10_15-49-43.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00304/photo_17_2024-05-10_15-49-43.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00304/photo_17_2024-05-10_15-49-43.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00304/photo_18_2024-05-10_15-49-43.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00304/photo_18_2024-05-10_15-49-43.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00304/photo_26_2024-05-10_15-49-43.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00304/photo_26_2024-05-10_15-49-43.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00304/photo_31_2024-05-24_19-09-48.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00304/photo_31_2024-05-24_19-09-48.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00304/photo_46_2024-05-24_19-10-45.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00304/photo_46_2024-05-24_19-10-45.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00304/photo_55_2024-05-24_19-10-45.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00304/photo_55_2024-05-24_19-10-45.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00304/photo_63_2024-05-10_15-48-34.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00304/photo_63_2024-05-10_15-48-34.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00304/photo_67_2024-05-24_19-10-45.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00304/photo_67_2024-05-24_19-10-45.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00304/photo_68_2024-05-10_15-48-34.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00304/photo_68_2024-05-10_15-48-34.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00304/photo_69_2024-05-10_15-48-34.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00304/photo_69_2024-05-10_15-48-34.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00304/photo_69_2024-05-24_19-10-45.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00304/photo_69_2024-05-24_19-10-45.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00304/photo_70_2024-05-10_15-48-34.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00304/photo_70_2024-05-10_15-48-34.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00304/photo_71_2024-05-10_15-48-34.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00304/photo_71_2024-05-10_15-48-34.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00304/photo_72_2024-05-24_19-10-45.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00304/photo_72_2024-05-24_19-10-45.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00304/photo_73_2024-05-10_15-48-34.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00304/photo_73_2024-05-10_15-48-34.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00304/photo_76_2024-05-24_19-10-45.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00304/photo_76_2024-05-24_19-10-45.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00304/photo_77_2024-05-10_15-48-34.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00304/photo_77_2024-05-10_15-48-34.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00304/photo_91_2024-05-24_19-09-48.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00304/photo_91_2024-05-24_19-09-48.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00304/photo_93_2024-05-10_15-48-34.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00304/photo_93_2024-05-10_15-48-34.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00304/photo_93_2024-05-24_19-09-48.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00304/photo_93_2024-05-24_19-09-48.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00304/photo_94_2024-05-24_19-09-48.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00304/photo_94_2024-05-24_19-09-48.jpg" alt="">
                                         </li>
                                     </ul>
                                     
@@ -457,29 +486,29 @@
                                 </div>
 
                                 <ul class="mini">
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00304/squares/gtw00304_01.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00304/squares/photo_16_2024-05-10_15-49-43.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00304/squares/photo_17_2024-05-10_15-49-43.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00304/squares/photo_18_2024-05-10_15-49-43.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00304/squares/photo_26_2024-05-10_15-49-43.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00304/squares/photo_31_2024-05-24_19-09-48.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00304/squares/photo_46_2024-05-24_19-10-45.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00304/squares/photo_55_2024-05-24_19-10-45.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00304/squares/photo_63_2024-05-10_15-48-34.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00304/squares/photo_67_2024-05-24_19-10-45.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00304/squares/photo_68_2024-05-10_15-48-34.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00304/squares/photo_69_2024-05-10_15-48-34.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00304/squares/photo_69_2024-05-24_19-10-45.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00304/squares/photo_70_2024-05-10_15-48-34.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00304/squares/photo_71_2024-05-10_15-48-34.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00304/squares/photo_72_2024-05-24_19-10-45.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00304/squares/photo_73_2024-05-10_15-48-34.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00304/squares/photo_76_2024-05-24_19-10-45.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00304/squares/photo_77_2024-05-10_15-48-34.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00304/squares/photo_91_2024-05-24_19-09-48.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00304/squares/photo_93_2024-05-10_15-48-34.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00304/squares/photo_93_2024-05-24_19-09-48.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00304/squares/photo_94_2024-05-24_19-09-48.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00304/squares/gtw00304_01.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00304/squares/photo_16_2024-05-10_15-49-43.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00304/squares/photo_17_2024-05-10_15-49-43.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00304/squares/photo_18_2024-05-10_15-49-43.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00304/squares/photo_26_2024-05-10_15-49-43.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00304/squares/photo_31_2024-05-24_19-09-48.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00304/squares/photo_46_2024-05-24_19-10-45.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00304/squares/photo_55_2024-05-24_19-10-45.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00304/squares/photo_63_2024-05-10_15-48-34.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00304/squares/photo_67_2024-05-24_19-10-45.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00304/squares/photo_68_2024-05-10_15-48-34.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00304/squares/photo_69_2024-05-10_15-48-34.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00304/squares/photo_69_2024-05-24_19-10-45.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00304/squares/photo_70_2024-05-10_15-48-34.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00304/squares/photo_71_2024-05-10_15-48-34.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00304/squares/photo_72_2024-05-24_19-10-45.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00304/squares/photo_73_2024-05-10_15-48-34.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00304/squares/photo_76_2024-05-24_19-10-45.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00304/squares/photo_77_2024-05-10_15-48-34.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00304/squares/photo_91_2024-05-24_19-09-48.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00304/squares/photo_93_2024-05-10_15-48-34.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00304/squares/photo_93_2024-05-24_19-09-48.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00304/squares/photo_94_2024-05-24_19-09-48.jpg" alt=""></button></li>
                                 </ul>
                             </div>
                         </div>
@@ -549,7 +578,7 @@
                 <li class="catalog__item item" tabindex="0">
                     <span class="visually-hidden">Открыть товар.</span>
 
-                    <img class="catalog__preimage" src="img/woman/GTW00601/gtw00601_01.jpg" alt="">
+                    <img class="catalog__preimage" src="img/catalog/woman/GTW00601/gtw00601_01.jpg" alt="">
 
                     <div class="item__content">
                         <div class="item__images">
@@ -557,70 +586,70 @@
                                 <div class="images-slider__wrapper">
                                     <ul class="images-slider__list">
                                         <li class="images-slider__item images-slider__item--active">
-                                            <img class="images-slider__image" src="img/woman/GTW00601/gtw00601_01.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00601/gtw00601_01.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00601/photo_13_2024-05-10_15-48-33.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00601/photo_13_2024-05-10_15-48-33.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00601/photo_22_2024-05-10_15-45-08.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00601/photo_22_2024-05-10_15-45-08.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00601/photo_23_2024-05-10_15-45-08.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00601/photo_23_2024-05-10_15-45-08.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00601/photo_26_2024-05-10_15-45-08.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00601/photo_26_2024-05-10_15-45-08.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00601/photo_40_2024-05-10_15-45-08.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00601/photo_40_2024-05-10_15-45-08.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00601/photo_42_2024-05-10_15-48-34.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00601/photo_42_2024-05-10_15-48-34.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00601/photo_44_2024-05-10_15-45-08.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00601/photo_44_2024-05-10_15-45-08.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00601/photo_44_2024-05-24_19-08-04.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00601/photo_44_2024-05-24_19-08-04.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00601/photo_47_2024-05-10_15-48-34.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00601/photo_47_2024-05-10_15-48-34.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00601/photo_49_2024-05-24_19-08-04.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00601/photo_49_2024-05-24_19-08-04.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00601/photo_52_2024-05-10_15-45-08.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00601/photo_52_2024-05-10_15-45-08.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00601/photo_54_2024-05-24_19-08-04.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00601/photo_54_2024-05-24_19-08-04.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00601/photo_55_2024-05-10_15-45-08.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00601/photo_55_2024-05-10_15-45-08.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00601/photo_58_2024-05-24_19-09-48.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00601/photo_58_2024-05-24_19-09-48.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00601/photo_62_2024-05-24_19-08-04.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00601/photo_62_2024-05-24_19-08-04.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00601/photo_63_2024-05-24_19-08-04.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00601/photo_63_2024-05-24_19-08-04.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00601/photo_64_2024-05-24_19-09-48.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00601/photo_64_2024-05-24_19-09-48.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00601/photo_74_2024-05-24_19-09-48.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00601/photo_74_2024-05-24_19-09-48.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00601/photo_81_2024-05-24_19-08-04.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00601/photo_81_2024-05-24_19-08-04.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00601/photo_82_2024-05-24_19-08-04.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00601/photo_82_2024-05-24_19-08-04.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00601/photo_94_2024-05-10_15-45-09.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00601/photo_94_2024-05-10_15-45-09.jpg" alt="">
                                         </li>
                                     </ul>
                                     
@@ -635,28 +664,28 @@
                                 </div>
 
                                 <ul class="mini">
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00601/squares/gtw00601_01.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00601/squares/photo_13_2024-05-10_15-48-33.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00601/squares/photo_22_2024-05-10_15-45-08.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00601/squares/photo_23_2024-05-10_15-45-08.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00601/squares/photo_26_2024-05-10_15-45-08.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00601/squares/photo_40_2024-05-10_15-45-08.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00601/squares/photo_42_2024-05-10_15-48-34.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00601/squares/photo_44_2024-05-10_15-45-08.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00601/squares/photo_44_2024-05-24_19-08-04.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00601/squares/photo_47_2024-05-10_15-48-34.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00601/squares/photo_49_2024-05-24_19-08-04.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00601/squares/photo_52_2024-05-10_15-45-08.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00601/squares/photo_54_2024-05-24_19-08-04.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00601/squares/photo_55_2024-05-10_15-45-08.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00601/squares/photo_58_2024-05-24_19-09-48.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00601/squares/photo_62_2024-05-24_19-08-04.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00601/squares/photo_63_2024-05-24_19-08-04.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00601/squares/photo_64_2024-05-24_19-09-48.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00601/squares/photo_74_2024-05-24_19-09-48.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00601/squares/photo_81_2024-05-24_19-08-04.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00601/squares/photo_82_2024-05-24_19-08-04.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00601/squares/photo_94_2024-05-10_15-45-09.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00601/squares/gtw00601_01.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00601/squares/photo_13_2024-05-10_15-48-33.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00601/squares/photo_22_2024-05-10_15-45-08.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00601/squares/photo_23_2024-05-10_15-45-08.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00601/squares/photo_26_2024-05-10_15-45-08.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00601/squares/photo_40_2024-05-10_15-45-08.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00601/squares/photo_42_2024-05-10_15-48-34.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00601/squares/photo_44_2024-05-10_15-45-08.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00601/squares/photo_44_2024-05-24_19-08-04.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00601/squares/photo_47_2024-05-10_15-48-34.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00601/squares/photo_49_2024-05-24_19-08-04.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00601/squares/photo_52_2024-05-10_15-45-08.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00601/squares/photo_54_2024-05-24_19-08-04.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00601/squares/photo_55_2024-05-10_15-45-08.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00601/squares/photo_58_2024-05-24_19-09-48.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00601/squares/photo_62_2024-05-24_19-08-04.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00601/squares/photo_63_2024-05-24_19-08-04.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00601/squares/photo_64_2024-05-24_19-09-48.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00601/squares/photo_74_2024-05-24_19-09-48.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00601/squares/photo_81_2024-05-24_19-08-04.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00601/squares/photo_82_2024-05-24_19-08-04.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00601/squares/photo_94_2024-05-10_15-45-09.jpg" alt=""></button></li>
                                 </ul>
                             </div>
                         </div>
@@ -726,7 +755,7 @@
                 <li class="catalog__item item" tabindex="0">
                     <span class="visually-hidden">Открыть товар.</span>
 
-                    <img class="catalog__preimage" src="img/woman/GTW00602/gtw00602_01.jpg" alt="">
+                    <img class="catalog__preimage" src="img/catalog/woman/GTW00602/gtw00602_01.jpg" alt="">
 
                     <div class="item__content">
                         <div class="item__images">
@@ -734,70 +763,70 @@
                                 <div class="images-slider__wrapper">
                                     <ul class="images-slider__list">
                                         <li class="images-slider__item images-slider__item--active">
-                                            <img class="images-slider__image" src="img/woman/GTW00602/gtw00602_01.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00602/gtw00602_01.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00602/photo_16_2024-05-10_15-48-33.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00602/photo_16_2024-05-10_15-48-33.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00602/photo_17_2024-05-10_15-48-33.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00602/photo_17_2024-05-10_15-48-33.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00602/photo_35_2024-05-10_15-45-08.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00602/photo_35_2024-05-10_15-45-08.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00602/photo_36_2024-05-10_15-45-08.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00602/photo_36_2024-05-10_15-45-08.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00602/photo_40_2024-05-24_19-08-04.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00602/photo_40_2024-05-24_19-08-04.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00602/photo_41_2024-05-24_19-08-04.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00602/photo_41_2024-05-24_19-08-04.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00602/photo_42_2024-05-24_19-08-04.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00602/photo_42_2024-05-24_19-08-04.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00602/photo_45_2024-05-24_19-08-04.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00602/photo_45_2024-05-24_19-08-04.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00602/photo_48_2024-05-10_15-48-34.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00602/photo_48_2024-05-10_15-48-34.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00602/photo_49_2024-05-10_15-45-08.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00602/photo_49_2024-05-10_15-45-08.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00602/photo_49_2024-05-10_15-48-34.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00602/photo_49_2024-05-10_15-48-34.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00602/photo_51_2024-05-10_15-48-34.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00602/photo_51_2024-05-10_15-48-34.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00602/photo_57_2024-05-10_15-45-08.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00602/photo_57_2024-05-10_15-45-08.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00602/photo_76_2024-05-10_15-45-08.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00602/photo_76_2024-05-10_15-45-08.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00602/photo_83_2024-05-10_15-45-09.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00602/photo_83_2024-05-10_15-45-09.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00602/photo_85_2024-05-10_15-45-09.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00602/photo_85_2024-05-10_15-45-09.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00602/photo_93_2024-05-10_15-45-09.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00602/photo_93_2024-05-10_15-45-09.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00602/photo_95_2024-05-10_15-45-09.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00602/photo_95_2024-05-10_15-45-09.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00602/photo_97_2024-05-10_15-45-09.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00602/photo_97_2024-05-10_15-45-09.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00602/photo_98_2024-05-10_15-45-09.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00602/photo_98_2024-05-10_15-45-09.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW00602/photo_99_2024-05-10_15-45-09.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW00602/photo_99_2024-05-10_15-45-09.jpg" alt="">
                                         </li>
                                     </ul>
                                     
@@ -812,28 +841,28 @@
                                 </div>
 
                                 <ul class="mini">
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00602/squares/gtw00602_01.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00602/squares/photo_16_2024-05-10_15-48-33.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00602/squares/photo_17_2024-05-10_15-48-33.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00602/squares/photo_35_2024-05-10_15-45-08.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00602/squares/photo_36_2024-05-10_15-45-08.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00602/squares/photo_40_2024-05-24_19-08-04.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00602/squares/photo_41_2024-05-24_19-08-04.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00602/squares/photo_42_2024-05-24_19-08-04.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00602/squares/photo_45_2024-05-24_19-08-04.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00602/squares/photo_48_2024-05-10_15-48-34.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00602/squares/photo_49_2024-05-10_15-45-08.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00602/squares/photo_49_2024-05-10_15-48-34.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00602/squares/photo_51_2024-05-10_15-48-34.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00602/squares/photo_57_2024-05-10_15-45-08.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00602/squares/photo_76_2024-05-10_15-45-08.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00602/squares/photo_83_2024-05-10_15-45-09.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00602/squares/photo_85_2024-05-10_15-45-09.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00602/squares/photo_93_2024-05-10_15-45-09.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00602/squares/photo_95_2024-05-10_15-45-09.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00602/squares/photo_97_2024-05-10_15-45-09.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00602/squares/photo_98_2024-05-10_15-45-09.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW00602/squares/photo_99_2024-05-10_15-45-09.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00602/squares/gtw00602_01.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00602/squares/photo_16_2024-05-10_15-48-33.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00602/squares/photo_17_2024-05-10_15-48-33.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00602/squares/photo_35_2024-05-10_15-45-08.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00602/squares/photo_36_2024-05-10_15-45-08.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00602/squares/photo_40_2024-05-24_19-08-04.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00602/squares/photo_41_2024-05-24_19-08-04.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00602/squares/photo_42_2024-05-24_19-08-04.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00602/squares/photo_45_2024-05-24_19-08-04.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00602/squares/photo_48_2024-05-10_15-48-34.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00602/squares/photo_49_2024-05-10_15-45-08.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00602/squares/photo_49_2024-05-10_15-48-34.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00602/squares/photo_51_2024-05-10_15-48-34.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00602/squares/photo_57_2024-05-10_15-45-08.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00602/squares/photo_76_2024-05-10_15-45-08.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00602/squares/photo_83_2024-05-10_15-45-09.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00602/squares/photo_85_2024-05-10_15-45-09.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00602/squares/photo_93_2024-05-10_15-45-09.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00602/squares/photo_95_2024-05-10_15-45-09.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00602/squares/photo_97_2024-05-10_15-45-09.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00602/squares/photo_98_2024-05-10_15-45-09.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW00602/squares/photo_99_2024-05-10_15-45-09.jpg" alt=""></button></li>
                                 </ul>
                             </div>
                         </div>
@@ -903,7 +932,7 @@
                 <li class="catalog__item item" tabindex="0">
                     <span class="visually-hidden">Открыть товар.</span>
 
-                    <img class="catalog__preimage" src="img/woman/GTW01701/gtw01701_01.jpg" alt="">
+                    <img class="catalog__preimage" src="img/catalog/woman/GTW01701/gtw01701_01.jpg" alt="">
 
                     <div class="item__content">
                         <div class="item__images">
@@ -911,19 +940,19 @@
                                 <div class="images-slider__wrapper">
                                     <ul class="images-slider__list">
                                         <li class="images-slider__item images-slider__item--active">
-                                            <img class="images-slider__image" src="img/woman/GTW01701/gtw01701_01.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW01701/gtw01701_01.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW01701/photo_2_2024-05-25_10-01-12.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW01701/photo_2_2024-05-25_10-01-12.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW01701/photo_3_2024-05-25_10-01-12.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW01701/photo_3_2024-05-25_10-01-12.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW01701/photo_4_2024-05-25_10-01-12.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW01701/photo_4_2024-05-25_10-01-12.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW01701/photo_6_2024-05-25_10-01-12.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW01701/photo_6_2024-05-25_10-01-12.jpg" alt="">
                                         </li>
                                     </ul>
                                     
@@ -938,11 +967,11 @@
                                 </div>
 
                                 <ul class="mini">
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW01701/squares/gtw01701_01.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW01701/squares/photo_2_2024-05-25_10-01-12.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW01701/squares/photo_3_2024-05-25_10-01-12.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW01701/squares/photo_4_2024-05-25_10-01-12.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW01701/squares/photo_6_2024-05-25_10-01-12.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW01701/squares/gtw01701_01.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW01701/squares/photo_2_2024-05-25_10-01-12.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW01701/squares/photo_3_2024-05-25_10-01-12.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW01701/squares/photo_4_2024-05-25_10-01-12.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW01701/squares/photo_6_2024-05-25_10-01-12.jpg" alt=""></button></li>
                                 </ul>
                             </div>
                         </div>
@@ -1012,7 +1041,7 @@
                 <li class="catalog__item item" tabindex="0">
                     <span class="visually-hidden">Открыть товар.</span>
 
-                    <img class="catalog__preimage" src="img/woman/GTW01702/gtw01702_01.jpg" alt="">
+                    <img class="catalog__preimage" src="img/catalog/woman/GTW01702/gtw01702_01.jpg" alt="">
 
                     <div class="item__content">
                         <div class="item__images">
@@ -1020,16 +1049,16 @@
                                 <div class="images-slider__wrapper">
                                     <ul class="images-slider__list">
                                         <li class="images-slider__item images-slider__item--active">
-                                            <img class="images-slider__image" src="img/woman/GTW01702/gtw01702_01.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW01702/gtw01702_01.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW01702/photo_12_2024-05-24_19-10-45.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW01702/photo_12_2024-05-24_19-10-45.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW01702/photo_34_2024-05-24_19-10-45.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW01702/photo_34_2024-05-24_19-10-45.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW01702/photo_2024-05-25_10-07-28.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW01702/photo_2024-05-25_10-07-28.jpg" alt="">
                                         </li>
                                     </ul>
                                     
@@ -1044,10 +1073,10 @@
                                 </div>
 
                                 <ul class="mini">
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW01702/squares/gtw01702_01.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW01702/squares/photo_12_2024-05-24_19-10-45.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW01702/squares/photo_34_2024-05-24_19-10-45.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW01702/squares/photo_2024-05-25_10-07-28.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW01702/squares/gtw01702_01.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW01702/squares/photo_12_2024-05-24_19-10-45.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW01702/squares/photo_34_2024-05-24_19-10-45.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW01702/squares/photo_2024-05-25_10-07-28.jpg" alt=""></button></li>
                                 </ul>
                             </div>
                         </div>
@@ -1117,7 +1146,7 @@
                 <li class="catalog__item item" tabindex="0">
                     <span class="visually-hidden">Открыть товар.</span>
 
-                    <img class="catalog__preimage" src="img/woman/GTW01703/gtw01703_01.jpg" alt="">
+                    <img class="catalog__preimage" src="img/catalog/woman/GTW01703/gtw01703_01.jpg" alt="">
 
                     <div class="item__content">
                         <div class="item__images">
@@ -1125,10 +1154,10 @@
                                 <div class="images-slider__wrapper">
                                     <ul class="images-slider__list">
                                         <li class="images-slider__item images-slider__item--active">
-                                            <img class="images-slider__image" src="img/woman/GTW01703/gtw01703_01.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW01703/gtw01703_01.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW01703/photo_2024-05-25_10-09-22.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW01703/photo_2024-05-25_10-09-22.jpg" alt="">
                                         </li>
                                     </ul>
                                     
@@ -1143,8 +1172,8 @@
                                 </div>
 
                                 <ul class="mini">
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW01703/squares/gtw01703_01.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW01703/squares/photo_2024-05-25_10-09-22.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW01703/squares/gtw01703_01.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW01703/squares/photo_2024-05-25_10-09-22.jpg" alt=""></button></li>
                                 </ul>
                             </div>
                         </div>
@@ -1214,7 +1243,7 @@
                 <li class="catalog__item item" tabindex="0">
                     <span class="visually-hidden">Открыть товар.</span>
 
-                    <img class="catalog__preimage" src="img/woman/GTW01801/gtw01801_01.jpg" alt="">
+                    <img class="catalog__preimage" src="img/catalog/woman/GTW01801/gtw01801_01.jpg" alt="">
 
                     <div class="item__content">
                         <div class="item__images">
@@ -1222,13 +1251,13 @@
                                 <div class="images-slider__wrapper">
                                     <ul class="images-slider__list">
                                         <li class="images-slider__item images-slider__item--active">
-                                            <img class="images-slider__image" src="img/woman/GTW01801/gtw01801_01.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW01801/gtw01801_01.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW01801/photo_19_2024-05-24_19-10-45.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW01801/photo_19_2024-05-24_19-10-45.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW01801/photo_35_2024-05-24_19-10-45.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW01801/photo_35_2024-05-24_19-10-45.jpg" alt="">
                                         </li>
                                     </ul>
                                     
@@ -1243,9 +1272,9 @@
                                 </div>
 
                                 <ul class="mini">
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW01801/squares/gtw01801_01.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW01801/squares/photo_19_2024-05-24_19-10-45.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW01801/squares/photo_35_2024-05-24_19-10-45.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW01801/squares/gtw01801_01.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW01801/squares/photo_19_2024-05-24_19-10-45.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW01801/squares/photo_35_2024-05-24_19-10-45.jpg" alt=""></button></li>
                                 </ul>
                             </div>
                         </div>
@@ -1315,7 +1344,7 @@
                 <li class="catalog__item item" tabindex="0">
                     <span class="visually-hidden">Открыть товар.</span>
 
-                    <img class="catalog__preimage" src="img/woman/GTW01802/gtw01802_01.jpg" alt="">
+                    <img class="catalog__preimage" src="img/catalog/woman/GTW01802/gtw01802_01.jpg" alt="">
 
                     <div class="item__content">
                         <div class="item__images">
@@ -1323,22 +1352,22 @@
                                 <div class="images-slider__wrapper">
                                     <ul class="images-slider__list">
                                         <li class="images-slider__item images-slider__item--active">
-                                            <img class="images-slider__image" src="img/woman/GTW01802/gtw01802_01.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW01802/gtw01802_01.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW01802/photo_5_2024-05-24_19-10-45.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW01802/photo_5_2024-05-24_19-10-45.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW01802/photo_36_2024-05-24_19-10-45.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW01802/photo_36_2024-05-24_19-10-45.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW01802/photo_2024-05-25_10-14-57.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW01802/photo_2024-05-25_10-14-57.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW01802/photo_2024-05-25_10-15-21.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW01802/photo_2024-05-25_10-15-21.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW01802/photo_2024-05-25_10-16-39.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW01802/photo_2024-05-25_10-16-39.jpg" alt="">
                                         </li>
                                     </ul>
                                     
@@ -1353,12 +1382,12 @@
                                 </div>
 
                                 <ul class="mini">
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW01802/squares/gtw01802_01.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW01802/squares/photo_5_2024-05-24_19-10-45.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW01802/squares/photo_36_2024-05-24_19-10-45.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW01802/squares/photo_2024-05-25_10-14-57.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW01802/squares/photo_2024-05-25_10-15-21.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW01802/squares/photo_2024-05-25_10-16-39.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW01802/squares/gtw01802_01.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW01802/squares/photo_5_2024-05-24_19-10-45.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW01802/squares/photo_36_2024-05-24_19-10-45.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW01802/squares/photo_2024-05-25_10-14-57.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW01802/squares/photo_2024-05-25_10-15-21.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW01802/squares/photo_2024-05-25_10-16-39.jpg" alt=""></button></li>
                                 </ul>
                             </div>
                         </div>
@@ -1428,7 +1457,7 @@
                 <li class="catalog__item item" tabindex="0">
                     <span class="visually-hidden">Открыть товар.</span>
 
-                    <img class="catalog__preimage" src="img/woman/GTW01803/gtw01803_01.jpg" alt="">
+                    <img class="catalog__preimage" src="img/catalog/woman/GTW01803/gtw01803_01.jpg" alt="">
 
                     <div class="item__content">
                         <div class="item__images">
@@ -1436,13 +1465,13 @@
                                 <div class="images-slider__wrapper">
                                     <ul class="images-slider__list">
                                         <li class="images-slider__item images-slider__item--active">
-                                            <img class="images-slider__image" src="img/woman/GTW01803/gtw01803_01.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW01803/gtw01803_01.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW01803/photo_2024-05-25_10-17-19.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW01803/photo_2024-05-25_10-17-19.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW01803/photo_2024-05-25_10-17-31.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW01803/photo_2024-05-25_10-17-31.jpg" alt="">
                                         </li>
                                     </ul>
                                     
@@ -1457,9 +1486,9 @@
                                 </div>
 
                                 <ul class="mini">
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW01803/squares/gtw01803_01.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW01803/squares/photo_2024-05-25_10-17-19.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW01803/squares/photo_2024-05-25_10-17-31.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW01803/squares/gtw01803_01.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW01803/squares/photo_2024-05-25_10-17-19.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW01803/squares/photo_2024-05-25_10-17-31.jpg" alt=""></button></li>
                                 </ul>
                             </div>
                         </div>
@@ -1529,7 +1558,7 @@
                 <li class="catalog__item item" tabindex="0">
                     <span class="visually-hidden">Открыть товар.</span>
 
-                    <img class="catalog__preimage" src="img/woman/GTW70100/gtw70100_01.jpg" alt="">
+                    <img class="catalog__preimage" src="img/catalog/woman/GTW70100/gtw70100_01.jpg" alt="">
 
                     <div class="item__content">
                         <div class="item__images">
@@ -1537,13 +1566,13 @@
                                 <div class="images-slider__wrapper">
                                     <ul class="images-slider__list">
                                         <li class="images-slider__item images-slider__item--active">
-                                            <img class="images-slider__image" src="img/woman/GTW70100/gtw70100_01.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW70100/gtw70100_01.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW70100/photo_33_2024-05-10_15-48-34.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW70100/photo_33_2024-05-10_15-48-34.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW70100/photo_40_2024-05-10_15-48-34.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW70100/photo_40_2024-05-10_15-48-34.jpg" alt="">
                                         </li>
                                     </ul>
                                     
@@ -1558,9 +1587,9 @@
                                 </div>
 
                                 <ul class="mini">
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW70100/squares/gtw70100_01.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW70100/squares/photo_33_2024-05-10_15-48-34.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW70100/squares/photo_40_2024-05-10_15-48-34.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW70100/squares/gtw70100_01.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW70100/squares/photo_33_2024-05-10_15-48-34.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW70100/squares/photo_40_2024-05-10_15-48-34.jpg" alt=""></button></li>
                                 </ul>
                             </div>
                         </div>
@@ -1630,7 +1659,7 @@
                 <li class="catalog__item item" tabindex="0">
                     <span class="visually-hidden">Открыть товар.</span>
 
-                    <img class="catalog__preimage" src="img/woman/GTW70101/gtw70101_01.jpg" alt="">
+                    <img class="catalog__preimage" src="img/catalog/woman/GTW70101/gtw70101_01.jpg" alt="">
 
                     <div class="item__content">
                         <div class="item__images">
@@ -1638,13 +1667,13 @@
                                 <div class="images-slider__wrapper">
                                     <ul class="images-slider__list">
                                         <li class="images-slider__item images-slider__item--active">
-                                            <img class="images-slider__image" src="img/woman/GTW70101/gtw70101_01.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW70101/gtw70101_01.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW70101/photo_22_2024-05-10_15-48-33.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW70101/photo_22_2024-05-10_15-48-33.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW70101/photo_23_2024-05-10_15-48-33.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW70101/photo_23_2024-05-10_15-48-33.jpg" alt="">
                                         </li>
                                     </ul>
                                     
@@ -1659,9 +1688,9 @@
                                 </div>
 
                                 <ul class="mini">
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW70101/squares/gtw70101_01.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW70101/squares/photo_22_2024-05-10_15-48-33.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW70101/squares/photo_23_2024-05-10_15-48-33.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW70101/squares/gtw70101_01.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW70101/squares/photo_22_2024-05-10_15-48-33.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW70101/squares/photo_23_2024-05-10_15-48-33.jpg" alt=""></button></li>
                                 </ul>
                             </div>
                         </div>
@@ -1731,7 +1760,7 @@
                 <li class="catalog__item item" tabindex="0">
                     <span class="visually-hidden">Открыть товар.</span>
 
-                    <img class="catalog__preimage" src="img/woman/GTW70102/gtw70102_01.jpg" alt="">
+                    <img class="catalog__preimage" src="img/catalog/woman/GTW70102/gtw70102_01.jpg" alt="">
 
                     <div class="item__content">
                         <div class="item__images">
@@ -1739,10 +1768,10 @@
                                 <div class="images-slider__wrapper">
                                     <ul class="images-slider__list">
                                         <li class="images-slider__item images-slider__item--active">
-                                            <img class="images-slider__image" src="img/woman/GTW70102/gtw70102_01.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW70102/gtw70102_01.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW70102/photo_18_2024-05-10_15-48-33.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW70102/photo_18_2024-05-10_15-48-33.jpg" alt="">
                                         </li>
                                     </ul>
                                     
@@ -1757,8 +1786,8 @@
                                 </div>
 
                                 <ul class="mini">
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW70102/squares/gtw70102_01.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW70102/squares/photo_18_2024-05-10_15-48-33.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW70102/squares/gtw70102_01.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW70102/squares/photo_18_2024-05-10_15-48-33.jpg" alt=""></button></li>
                                 </ul>
                             </div>
                         </div>
@@ -1828,7 +1857,7 @@
                 <li class="catalog__item item" tabindex="0">
                     <span class="visually-hidden">Открыть товар.</span>
 
-                    <img class="catalog__preimage" src="img/woman/GTW70103/gtw70103_01.jpg" alt="">
+                    <img class="catalog__preimage" src="img/catalog/woman/GTW70103/gtw70103_01.jpg" alt="">
 
                     <div class="item__content">
                         <div class="item__images">
@@ -1836,13 +1865,13 @@
                                 <div class="images-slider__wrapper">
                                     <ul class="images-slider__list">
                                         <li class="images-slider__item images-slider__item--active">
-                                            <img class="images-slider__image" src="img/woman/GTW70103/gtw70103_01.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW70103/gtw70103_01.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW70103/photo_43_2024-05-10_15-48-34.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW70103/photo_43_2024-05-10_15-48-34.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW70103/photo_44_2024-05-10_15-48-34.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW70103/photo_44_2024-05-10_15-48-34.jpg" alt="">
                                         </li>
                                     </ul>
                                     
@@ -1857,9 +1886,9 @@
                                 </div>
 
                                 <ul class="mini">
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW70103/squares/gtw70103_01.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW70103/squares/photo_43_2024-05-10_15-48-34.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW70103/squares/photo_44_2024-05-10_15-48-34.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW70103/squares/gtw70103_01.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW70103/squares/photo_43_2024-05-10_15-48-34.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW70103/squares/photo_44_2024-05-10_15-48-34.jpg" alt=""></button></li>
                                 </ul>
                             </div>
                         </div>
@@ -1929,7 +1958,7 @@
                 <li class="catalog__item item" tabindex="0">
                     <span class="visually-hidden">Открыть товар.</span>
 
-                    <img class="catalog__preimage" src="img/woman/GTW70104/gtw70104_01.jpg" alt="">
+                    <img class="catalog__preimage" src="img/catalog/woman/GTW70104/gtw70104_01.jpg" alt="">
 
                     <div class="item__content">
                         <div class="item__images">
@@ -1937,13 +1966,13 @@
                                 <div class="images-slider__wrapper">
                                     <ul class="images-slider__list">
                                         <li class="images-slider__item images-slider__item--active">
-                                            <img class="images-slider__image" src="img/woman/GTW70104/gtw70104_01.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW70104/gtw70104_01.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW70104/photo_25_2024-05-10_15-48-33.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW70104/photo_25_2024-05-10_15-48-33.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW70104/photo_68_2024-05-24_19-09-48.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW70104/photo_68_2024-05-24_19-09-48.jpg" alt="">
                                         </li>
                                     </ul>
                                     
@@ -1958,9 +1987,9 @@
                                 </div>
 
                                 <ul class="mini">
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW70104/squares/gtw70104_01.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW70104/squares/photo_25_2024-05-10_15-48-33.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW70104/squares/photo_68_2024-05-24_19-09-48.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW70104/squares/gtw70104_01.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW70104/squares/photo_25_2024-05-10_15-48-33.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW70104/squares/photo_68_2024-05-24_19-09-48.jpg" alt=""></button></li>
                                 </ul>
                             </div>
                         </div>
@@ -2030,7 +2059,7 @@
                 <li class="catalog__item item" tabindex="0">
                     <span class="visually-hidden">Открыть товар.</span>
 
-                    <img class="catalog__preimage" src="img/woman/GTW70105/gtw70105_01.jpg" alt="">
+                    <img class="catalog__preimage" src="img/catalog/woman/GTW70105/gtw70105_01.jpg" alt="">
 
                     <div class="item__content">
                         <div class="item__images">
@@ -2038,13 +2067,13 @@
                                 <div class="images-slider__wrapper">
                                     <ul class="images-slider__list">
                                         <li class="images-slider__item images-slider__item--active">
-                                            <img class="images-slider__image" src="img/woman/GTW70105/gtw70105_01.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW70105/gtw70105_01.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW70105/photo_34_2024-05-10_15-48-34.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW70105/photo_34_2024-05-10_15-48-34.jpg" alt="">
                                         </li>
                                         <li class="images-slider__item">
-                                            <img class="images-slider__image" src="img/woman/GTW70105/photo_56_2024-05-24_19-09-48.jpg" alt="">
+                                            <img class="images-slider__image" src="img/catalog/woman/GTW70105/photo_56_2024-05-24_19-09-48.jpg" alt="">
                                         </li>
                                     </ul>
                                     
@@ -2059,9 +2088,9 @@
                                 </div>
 
                                 <ul class="mini">
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW70105/squares/gtw70105_01.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW70105/squares/photo_34_2024-05-10_15-48-34.jpg" alt=""></button></li>
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/woman/GTW70105/squares/photo_56_2024-05-24_19-09-48.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW70105/squares/gtw70105_01.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW70105/squares/photo_34_2024-05-10_15-48-34.jpg" alt=""></button></li>
+                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="img/catalog/woman/GTW70105/squares/photo_56_2024-05-24_19-09-48.jpg" alt=""></button></li>
                                 </ul>
                             </div>
                         </div>
@@ -2128,99 +2157,6 @@
                         </button>
                     </div>
                 </li>
-                <li class="catalog__item item" tabindex="0">
-                    <span class="visually-hidden">Открыть товар.</span>
-
-                    <img class="catalog__preimage" src="" alt="">
-
-                    <div class="item__content">
-                        <div class="item__images">
-                            <div class="images-slider">
-                                <div class="images-slider__wrapper">
-                                    <ul class="images-slider__list">
-                                        <li class="images-slider__item images-slider__item--active">
-                                            <img class="images-slider__image" src="" alt="">
-                                        </li>
-                                    </ul>
-                                    
-                                    <button class="images-slider__button images-slider__button--prev prev-button" type="button">
-                                        <span class="visually-hidden">Предыдущая фотография.</span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 1024 1024"><path fill="currentColor" d="m488.832 344.32l-339.84 356.672a32 32 0 0 0 0 44.16l.384.384a29.44 29.44 0 0 0 42.688 0l320-335.872l319.872 335.872a29.44 29.44 0 0 0 42.688 0l.384-.384a32 32 0 0 0 0-44.16L535.168 344.32a32 32 0 0 0-46.336 0"/></svg>
-                                    </button>
-                                    <button class="images-slider__button images-slider__button--next next-button" type="button">
-                                        <span class="visually-hidden">Следующая фотография.</span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 1024 1024"><path fill="currentColor" d="m488.832 344.32l-339.84 356.672a32 32 0 0 0 0 44.16l.384.384a29.44 29.44 0 0 0 42.688 0l320-335.872l319.872 335.872a29.44 29.44 0 0 0 42.688 0l.384-.384a32 32 0 0 0 0-44.16L535.168 344.32a32 32 0 0 0-46.336 0"/></svg>
-                                    </button>
-                                </div>
-
-                                <ul class="mini">
-                                    <li class="mini__item"><button class="mini__button" type="button"><img class="mini__image" src="" alt=""></button></li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="item__text text">
-                            <dl class="text__list text__list--basic">
-                                <div class="text__item">
-                                    <dt class="text__title">Артикул:</dt>
-                                    <dd class="text__description"></dd>
-                                </div>
-                                
-                                <div class="text__item">
-                                    <dt class="text__title">В коробке:</dt>
-                                    <dd class="text__description"></dd>
-                                </div>
-                                
-                                <div class="text__item">
-                                    <dt class="text__title">Цвет:</dt>
-                                    <dd class="text__description">в ассортименте</dd>
-                                </div>
-                                
-                                <div class="text__item">
-                                    <dt class="text__title">Размерный ряд/ростовка:</dt>
-                                    <dd class="text__description">37-41 / 1:2:1:1:1</dd>
-                                </div>
-                            </dl>
-
-                            <dl class="text__list text__list--details">
-                                <div class="text__item">
-                                    <dt class="text__title">Обувь домашняя</dt>
-                                    <dd class="text__description"></dd>
-                                </div>
-                                
-                                <div class="text__item">
-                                    <dt class="text__title">Верх:</dt>
-                                    <dd class="text__description">текстиль</dd>
-                                </div>
-
-                                <div class="text__item">
-                                    <dt class="text__title">Подошва:</dt>
-                                    <dd class="text__description">ПУ</dd>
-                                </div>
-
-                                <div class="text__item">
-                                    <dt class="text__title">Стелька:</dt>
-                                    <dd class="text__description">текстиль</dd>
-                                </div>
-
-                                <div class="text__item">
-                                    <dt class="text__title">Производство:</dt>
-                                    <dd class="text__description">Россия</dd>
-                                </div>
-
-                                <div class="text__item">
-                                    <dt class="text__title">Максимальный выпуск&nbsp;в месяц (произв.мощность), пар:</dt>
-                                    <dd class="text__description">24 000</dd>
-                                </div>
-                            </dl>
-                        </div>
-
-                        <button class="item__close-button" type="button">
-                            <span class="visually-hidden">Закрыть.</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><g fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"><path d="M5.47 5.47a.75.75 0 0 1 1.06 0l12 12a.75.75 0 1 1-1.06 1.06l-12-12a.75.75 0 0 1 0-1.06"/><path d="M18.53 5.47a.75.75 0 0 1 0 1.06l-12 12a.75.75 0 0 1-1.06-1.06l12-12a.75.75 0 0 1 1.06 0"/></g></svg>
-                        </button>
-                    </div>
-                </li>
             </ul>
 
             <button class="up-button">
@@ -2234,6 +2170,6 @@
 
     </footer>
 
-    <script src="script.js"></script>
+    <script src="js/catalog.js"></script>
 </body>
 </html>
